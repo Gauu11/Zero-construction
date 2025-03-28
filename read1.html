@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Example</title>
+    <style>
+        /* Styling for the overlay */
+        .overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            padding: 20px;
+            background-image:"C:\Users\Windows-10\Desktop\project\assets\media\img\latest-project-img-1.jpg";
+            border: 2px solid black;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        /* Text styling */
+        .overlay p {
+            font-size: 28px;
+            font-family: "arial", serif;
+            font-weight: bold;
+        }
+
+        /* Button styling */
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn" onclick="showOverlay()">Read</button>
+
+    <div id="overlay" class="overlay">
+        <p>Poolscape VILLA</p>
+        <p>MIN REQUIRED Sq. Feet: 1200 sq. Ft</p>
+        <p>Amount: 2000 per sq. Ft. </p>
+        <p>amount may vary from place to place</p>
+        <p>separate charges for interior based on your brands</p>
+        
+        <p>All Interior brands can be customised</p>
+        
+        <a data-aos-delay="600" data-aos="zoom-in-up" href="projects.html" class="FZ_btn btn_icon icon__arrow"><button>CLOSE</button></a>
+ 
+    </div>
+
+    <script>
+        function showOverlay() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closeOverlay() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
